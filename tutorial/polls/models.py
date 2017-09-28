@@ -17,4 +17,4 @@ class Choice(models.Model):
     votes = models.IntegerField(default=0)
 
     def __str__(self):
-        return "설문조사의 제목 : {}, 선택지 {}".format(self.question, self.title)
+        return "설문조사의 제목 : {} 선택지 : {}".format(self.title, self.question.title)
